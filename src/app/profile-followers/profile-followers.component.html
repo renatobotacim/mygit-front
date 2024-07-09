@@ -1,0 +1,29 @@
+<div class="text-white">
+
+  <div class="relative w-auto overflow-hidden p-3">
+
+    <img src="https://avatars.githubusercontent.com/u/1173483?v=4" alt="Profile Image"
+         class="row w-12 h-12 rounded-full my-3 float-left mx-5">
+    <div class="float-left mt-3">
+      <p class=""> Raphael Martins de Carvalho <small>rcarvalhodns25</small></p>
+      <small class="text-gray-400"><p>Entusiasta de Redes de Computadores e apaixonado por construir e otimizar
+        infraestruturas de rede.</p>
+        <p>UniSuam Rio de Janeiro</p></small>
+
+    </div>
+    <div class="absolute right-4 rounded bg-gray-600 w-28 text-sm mt-3 mb-5 py-1 text-center text-white">
+      Follow
+    </div>
+    <hr>
+  </div>
+
+  <ul>
+    <li *ngFor="let follower of followers">
+      <img [src]="follower.image" alt="Follower Image" class="follower-image">
+      <div>
+        <h3>{{follower.name}}</h3>asdas
+        <p>{{follower.description}}</p>
+      </div>
+    </li>
+  </ul>
+</div>
